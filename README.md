@@ -3,14 +3,12 @@
 ```shell
 npm install -g quicktype
 ```
-
 ### To generate the model from the schema (done once for each schema change)
 2. Create `model.py` by using 
 `quicktype --no-nice-property-names -s schema example_schema.json -o model.py`
    * if `--nice-property-names` is used (rather than `--no-nice-property-names`) then the deserializer fails because the properties will then have an `_`
    * you may change example_schema.json
    * the sample_data in example_code.py must conform to this schema
-
 ### Run the (de)serialization
 3. Run `python example_code.py`
    * The (de)serializer does not know about the model
