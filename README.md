@@ -3,10 +3,10 @@ https://yzhong-cs.medium.com/serialize-and-deserialize-complex-json-in-python-20
 and
 https://app.quicktype.io/
 
-`example_obj.json` should conform to `schema_example.json`
+`example_obj.json` should conform to `example_schema.json`
 
 if any of these is changed, recreate `model.py` using 
-`quicktype --no-nice-property-names -s schema schema_example.json -o model.py`  
+`quicktype --no-nice-property-names -s schema example_schema.json -o model.py`  
 
 `npm install -g quicktype`
 
